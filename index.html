@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
+
+    <title>TECHNICAL EXAM #1</title>
+</head>
+<body>
+<div class="titleLogo">
+    <h1 class="titleLogo">KNEEGA STORE</h1>
+
+<div class="wrapper">
+    <div class="container">
+    <input type="text" id="searchInput" placeholder="PRODUCT NAME">
+</div>
+
+<div class="container">
+    <input type="number" id="budgetInput" placeholder="SET $">
+    <select id="categorySelector">
+        <option value="all">All Categories</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Shoes">Shoes</option>
+        <option value="Accessories">Accessories</option>
+    </select>
+    <button type="button" onclick="performSearch()">SEARCH</button>
+</div>
+    <div class="results">
+        <div class="rows">
+            <div class="row" id="result"></div>
+        </div>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+</html>
